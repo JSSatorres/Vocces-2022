@@ -5,12 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <script src="5.js" defer type="module"></script>
 </head>
 <body>
     <article>
-        <h1>Listado de usuarios</h1>
-        <p>Queremos mostrar el listado de usarios que existen en nuestro sistema y que al hacer click sobre uno de ellos nos muestre la información del usuario.</p>
-        <p>Para obtener el listado de usuarios el backend nos ha proporcionado el siguiente endpoint <a href="https://jsonplaceholder.typicode.com/users" target="_blank">Users</a>.</p>
+        <h1 class="text-center my-3">Listado de usuarios</h1>
+        <p class="mx-5">Queremos mostrar el listado de usarios que existen en nuestro sistema y que al hacer click sobre uno de ellos nos muestre la información del usuario.</p>
+        <p class="mx-5">Para obtener el listado de usuarios el backend nos ha proporcionado el siguiente endpoint <a href="https://jsonplaceholder.typicode.com/users" target="_blank">Users</a>.</p>
     </article>
+    <section id="data">
+        <div class="container">
+            <ul class="row" id="items"></ul>
+        </div>
+    </section>
+<!--    Modal   ---------------------------->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div id="modal-info"></div>            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+<!--   --------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">    
+    </script>
 </body>
 </html>
+
