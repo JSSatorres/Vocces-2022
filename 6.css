@@ -20,6 +20,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .fulWidthArticle{
@@ -48,7 +49,6 @@
 	padding: var(--size-gap);
 	
 }
-
 
 .darkSection{
 	background-color:var(--color-dark);
@@ -89,22 +89,29 @@ img{
 	width: 50vw;
 	display: block;
 	margin: auto;
+	object-fit: cover;
+}
+p, span{
+	font-size: 15px;
+	font-weight: 500;
+	padding: auto;
 }
 
 .imgG{
 	filter: blur();
 	width: 25vw;
 	margin-bottom: 25px;
+	height: 300px;
+	object-fit: cover;
 }
 
 button{
     background-color: rgba(0, 0, 0, 0.062);
     height: 50px;
-    width:15%;
+    width:100px;
     border-radius: 5px;
     color: var(--color-terciary);
-    font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 500;
 	margin: 20px 10px 20px 10px;
 }
@@ -115,6 +122,34 @@ button:focus {
   transform: translateY(-0.25em);
 }
 
+#sectionImageVR{
+	padding: 50px 0 20px 0;
+}
+
+#imageVR{
+	width: 35vw;
+}
+
+#sectionTicketPoint{
+	background-color: #3981cf;
+}
+
+#imageTicketPoint{
+	height: 300px;
+	width: 150px;
+	object-fit: cover;
+	margin-bottom: 25px;
+} 
+
+.fadeInText {
+	animation: fadeIn 6s;
+  }
+  
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
 
 @media screen and (max-width: 990px) {
 	.GridSection{
@@ -124,5 +159,18 @@ button:focus {
 		justify-content: center;    
 		text-align: center;
 	}
-	
+
+	.imgG{
+		filter: blur();
+		width: 45vw;
+		margin-bottom: 25px;
+		height: 150px;
+		object-fit: cover;
+	}
+
+	button{
+		height: 30px;
+		width:70px;
+		font-size: 10px;	
+	}	
   }
