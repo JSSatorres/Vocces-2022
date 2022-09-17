@@ -33,3 +33,21 @@ findUniq([
   "Iron Man",
   "Iron Man",
 ]); // 'Wonder Woman'
+
+console.log(
+  findUniq([
+    "Capitán América",
+    "Hulk",
+    "Deadpool",
+    "Capitán América",
+    "Hulk",
+    "Wonder Woman",
+    "Deadpool",
+    "Iron Man",
+    "Iron Man",
+    "pedro",
+  ])
+);
+
+console.log(findUniq(["12", 10, "12", 11, 1, 11, 10, "12", "5"]));
+module.exports = { findUniq };

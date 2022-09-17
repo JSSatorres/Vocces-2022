@@ -1,0 +1,26 @@
+{
+  "name": "prueba-frontend-2022",
+  "version": "1.0.0",
+  "description": "## ¿En qué consiste? La prueba consta de 6 ejercicios básicos cada uno en un archivo numerado del 1 al 6.",
+  "main": "1.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSSatorres/Vocces-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSSatorres/Vocces-2022/issues"
+  },
+  "homepage": "https://github.com/JSSatorres/Vocces-2022#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "jest":{
+    "testEnvironment":"node"
+  }
+}
