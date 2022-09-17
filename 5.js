@@ -27,8 +27,6 @@ const printList = async () => {
       "border",
       "border-info"
     );
-    //elementLi.classList.add("btn");
-    //elementLi.classList.add("btn-transparent");
     elementLi.innerHTML = item.name;
     elementLi.setAttribute("data-bs-toggle", "modal");
     elementLi.setAttribute("data-bs-target", "#myModal");
