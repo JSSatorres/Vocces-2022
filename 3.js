@@ -28,6 +28,6 @@ const measurements = [
   245, 248, 259, 190, 180, 185, 191, 185, 188, 189, 204, 213, 215, 227, 222,
   221, 236, 235, 236, 232, 224, 221, 228, 234, 226, 227, 228, 230, 232, 234,
 ];
-//increasedMeasurements(measurements); // 19
+increasedMeasurements(measurements); // 19
 
-console.log(increasedMeasurements([]));
+module.exports = { increasedMeasurements };

@@ -20,7 +20,7 @@ const arrayTest2 = [
 ];
 
 describe(" function numbersTop", () => {
-  describe("returns the unique value of an array", () => {
+  describe("returns the three most repeated elements sorted in descending order by number of repetitions", () => {
     describe("recived [3, 3, 1, 4, 1, 3, 1, 1, 2, 2, 2, 3, 1, 3, 4, 1]", () => {
       test("should return '[1, 3, 2]' ", () => {
         expect(numbersTop(arrayTest1)).toStrictEqual(["1", "3", "2"]);
